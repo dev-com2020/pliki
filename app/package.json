@@ -1,1 +1,25 @@
-
+{
+    "name": "playwright-tests",
+    "version": "1.0.0",
+    "description": "Projekt testów e2e z użyciem Playwright i Jest",
+    "main": "index.js",
+    "scripts": {
+      "test": "npx playwright test",     
+      "install-playwright": "npx playwright install",  
+      "test:headless": "npx playwright test --headless", 
+      "test:headed": "npx playwright test --headed",    
+      "test:junit": "npx playwright test --reporter=junit",  
+      "test:debug": "npx playwright test --debug"    
+    },
+    "dependencies": {
+      "axios": "^0.24.0"     
+    },
+    "devDependencies": {
+      "@playwright/test": "^1.19.0",     
+      "jest": "^27.4.7",                  
+      "axios-mock-adapter": "^1.19.0"
+    },
+    "author": "Twoje Imię",
+    "license": "MIT"
+  }
+  
